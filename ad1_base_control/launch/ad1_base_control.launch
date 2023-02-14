@@ -24,7 +24,7 @@
 
 <!-- teleop keyboard -->
   <node pkg="ad1_base_control" type="ad1_teleop_keyboard" name="ad1_teleop_keyboard" output="screen">
-  </node> -->
+  </node> 
 
 <!-- ad1 control  -->
   <node pkg="ad1_base_control" type="ad1_control" name="ad1_control" output="screen">
