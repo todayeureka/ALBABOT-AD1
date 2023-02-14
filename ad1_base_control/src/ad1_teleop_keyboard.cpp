@@ -72,7 +72,7 @@ int main(int argc, char** argv)
 
   printf("%s", msg);
 
-  printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r\n", speed, turn);
+  printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r", speed, turn);
 
   while(true){
 
@@ -88,7 +88,7 @@ int main(int argc, char** argv)
                   speed = 0.5;
                 }
 
-                 printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r\n", speed, turn);
+                 printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r", speed, turn);
                 break;
             case 'B':
                 speed -= 0.1;
@@ -96,7 +96,7 @@ int main(int argc, char** argv)
                 {
                   speed = -0.5;
                 }
-                 printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r\n", speed, turn);
+                 printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r", speed, turn);
                 break;
             case 'C':
                 turn += 0.1;
@@ -105,7 +105,7 @@ int main(int argc, char** argv)
                  turn = 0.5;
                 }
 
-                 printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r\n", speed, turn);
+                 printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r", speed, turn);
                 break;
             case 'D':
                 turn -= 0.1;
@@ -114,7 +114,7 @@ int main(int argc, char** argv)
                   turn = -0.5;
                 }
 
-                 printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r\n", speed, turn);
+                 printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r", speed, turn);
                 break;
         }
     }
@@ -122,7 +122,7 @@ int main(int argc, char** argv)
     {
         speed = 0.0;
         turn = 0.0;
-         printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r\n", speed, turn);
+         printf("\rlinear velocity %f\tangular velocity %f | Awaiting command...\r", speed, turn);
     }
     else if( key == '\x03')
     {
